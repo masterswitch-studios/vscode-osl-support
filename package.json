@@ -1,0 +1,26 @@
+{
+    "name": "osl-support",
+    "displayName": "OMSI Scripting Language",
+    "description": "Adds basic language support for OMSI 2's Scripting Langugae (OSL)",
+    "version": "0.0.1",
+    "publisher": "BlueOrange",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "osl",
+            "aliases": ["OMSI Scripting Language", "osl"],
+            "extensions": [".osc",".cfg",".bus",".hof",".cti","txt",".osd",".oscf",".oss"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "osl",
+            "scopeName": "source.osl",
+            "path": "./syntaxes/osl.tmLanguage.json"
+        }]
+    }
+}
