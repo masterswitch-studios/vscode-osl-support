@@ -18,7 +18,7 @@
 			},
 			{
 				"name": "entity.name.function.osl",
-				"match": "(\\(L\\.L.+?\\)|\\(L\\.$.+?\\)|\\(L\\.S.+?\\)|l\\d+)"
+				"match": "(\\(L\\.L.+?\\)|\\(L\\.\\$.+?\\)|\\(L\\.S.+?\\)|l\\d+)"
 			},
 			{
 				"name": "comment.line",
@@ -38,11 +38,11 @@
 			},
 			{
 				"name": "markup.heading",
-				"match": "(\\&\\&|\\|\\||=|<=|>=|>|<|\\+|\\-|\\*)"
+				"match": "(\\&\\&|\\|\\||=|<=|>=|>|<|\\+|\\-|\\*|\\$=|\\$\\+|\\/|\\$\\*|min|max|sqr|arctan|trunc|exp|sgn)"
 			},
 			{
 				"name": "storage.type.cs",
-				"match": "(\\(S\\.L.+?\\)|\\(S\\.$.+?\\)|s\\d+)"
+				"match": "(\\(S\\.L.+?\\)|\\(S\\.\\$.+?\\)|s\\d+)"
 			},
 			{
 				"name": "entity.name.tag.osl",
@@ -66,8 +66,6 @@
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.osl",
-					"match": "\\\\."
 				}
 			]
 		}
