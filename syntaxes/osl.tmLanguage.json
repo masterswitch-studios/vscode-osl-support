@@ -46,7 +46,7 @@
 			},
 			{
 				"name": "entity.name.tag.osl",
-				"match": "(^{trigger:.+?}|^{macro:.+?}|^{end}|\\(M\\.L\\..+?\\))"
+				"match": "(^{frame}|^{init}|^{trigger:.+?}|^{macro:.+?}|^{end}|\\(M\\.L\\..+?\\))"
 			},
 
 			
