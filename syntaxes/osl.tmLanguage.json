@@ -33,12 +33,16 @@
 				"match": "(\\(T\\.L.+?\\))"
 			},
 			{
+				"name":"variable.other",
+				"match": "(\\(M\\.V\\..+?\\))"
+			},
+			{
 				"name": "constant.character.escape.osl",
 				"match": "(\\(C\\.L.+?\\))"
 			},
 			{
 				"name": "markup.heading",
-				"match": "(\\&\\&|\\|\\||=|<=|>=|>|<|\\+|\\-|\\*|\\$=|\\$\\+|\\/|\\$\\*|min|max|sqr|arctan|trunc|exp|sgn)"
+				"match": "(\\s+\\$IntToStr\\s+|\\s+\\$IntToStrEnh\\s+|\\s+\\$SetLengthL\\s+|\\s+\\$StrToFloat\\s+|\\s+\\$SetLengthR\\s+|\\s+\\$length\\s+|\\s+\\$RemoveSpaces\\s+|\\s+random\\s+|\\&\\&|\\|\\||=|<=|>=|>|<|\\+|\\-|\\*|\\$=|\\$\\+|\\/|\\$\\*|\\s+min\\s+|\\s+max\\s+|\\s+sqr\\s+|\\s+arctan\\s+|\\s+trunc\\s+|\\s+exp\\s+|\\s+sgn\\s+)"
 			},
 			{
 				"name": "storage.type.cs",
@@ -48,8 +52,6 @@
 				"name": "entity.name.tag.osl",
 				"match": "(^{frame}|^{init}|^{trigger:.+?}|^{macro:.+?}|^{end}|\\(M\\.L\\..+?\\))"
 			},
-
-			
 			{
 				"name": "entity.name.tag.osl",
 				"match": "(^\\[.+?\\])"
