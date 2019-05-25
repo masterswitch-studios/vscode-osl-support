@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "OMSI Scripting Language",
+	"name": "OMSI Script file",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -22,7 +22,7 @@
 			},
 			{
 				"name": "comment.line",
-				"match": "(^'.*)"
+				"match": "^('.*|#.*)"
 			},
 			{
 				"name": "invalid.illegal",
@@ -51,14 +51,6 @@
 			{
 				"name": "entity.name.tag.osl",
 				"match": "(^{frame}|^{init}|^{trigger:.+?}|^{macro:.+?}|^{end}|\\(M\\.L\\..+?\\))"
-			},
-			{
-				"name": "entity.name.tag.osl",
-				"match": "(^\\[.+?\\])"
-			},
-			{
-				"name": "comment.line",
-				"match": "(^#.*)"
 			}
 		]
 		},

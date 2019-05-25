@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "OMSI Model Config file",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name": "markup.heading",
+				"match": "\\[(mesh|interiorlight|spotlight|light_enh_2|light|CTC|VFDmaxmin|texttexture|texttexture_enh|scripttexture)\\]"
+			},
+			{
+				"name": "entity.name.tag.osl_config",
+				"match": "(^\\[.+?\\])"
+			},
+			{
+				"name": "comment.line",
+				"match": "^('.*|#.*)"
+			}
+		]
+		}
+	},
+	"scopeName": "source.osl_config"
+}

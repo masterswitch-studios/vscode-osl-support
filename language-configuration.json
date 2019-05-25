@@ -22,5 +22,18 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""]
-    ]
+    ],
+
+    "folding": {
+        "markers": {
+            "start": "^\\{(macro|trigger|frame|frame_ai)\\}\\b",
+            "end": "^\\{end\\}\\b"
+        }
+    },
+    
+    "indentationRules": {
+        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
+      
+    }
 }

@@ -2,7 +2,7 @@
     "name": "osl-support",
     "displayName": "OMSI Scripting Language",
     "description": "Adds basic language support for OMSI 2's Scripting Langugae (OSL)",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "BlueOrange",
     "engines": {
         "vscode": "^1.32.3"
@@ -11,16 +11,64 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "osl",
-            "aliases": ["OMSI Scripting Language", "osl"],
-            "extensions": [".osc",".cfg",".bus",".hof",".cti","txt",".osd",".oscf",".oss"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "osl",
-            "scopeName": "source.osl",
-            "path": "./syntaxes/osl.tmLanguage.json"
-        }]
-    }
+        "languages": [
+            {
+                "id": "osl",
+                "aliases": [
+                    "OMSI Scripting Language",
+                    "osl"
+                ],
+                "extensions": [
+                    ".osc",
+                    ".bus",
+                    ".hof",
+                    ".cti",
+                    ".osd",
+                    ".oscf",
+                    ".oss"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "osl_const",
+                "aliases": [
+                    "OMSI Scripting Language Constfile",
+                    "osl_const"
+                ],
+                "extensions": [
+                    "_constfile.txt"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "osl_config",
+                "aliases": [
+                    "OMSI Model Config file",
+                    "osl_config"
+                ],
+                "extensions": [
+                    ".cfg"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "osl",
+                "scopeName": "source.osl",
+                "path": "./syntaxes/osl.tmLanguage.json"
+            },
+            {
+                "language": "osl_const",
+                "scopeName": "source.osl_const",
+                "path": "./syntaxes/osl_const.tmLanguage.json"
+            },
+            {
+                "language": "osl_config",
+                "scopeName": "source.osl_config",
+                "path": "./syntaxes/osl_config.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {}
 }
