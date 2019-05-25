@@ -2,7 +2,7 @@
     "name": "osl-support",
     "displayName": "OMSI Scripting Language",
     "description": "Adds basic language support for OMSI 2's Scripting Langugae (OSL)",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "publisher": "BlueOrange",
     "engines": {
         "vscode": "^1.32.3"
