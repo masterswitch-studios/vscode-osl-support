@@ -1,3 +1,3 @@
-# osl-support README
+# VSCode OMSI support
 
-This Visual Studio Code extension adds support for OMSI 2's propiatary scripting language.
+This plugin adds basic syntax highlighting to various files used for modding in OMSI/OMSI 2.
