@@ -70,5 +70,9 @@
             }
         ]
     },
-    "dependencies": {}
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/masterswitch-studios/vscode-osl-support.git"
+    }
 }
